@@ -1,0 +1,26 @@
+{
+    "include": ["./src/**/*"],
+    "exclude": ["./dist/**/*"],
+    "compilerOptions": {
+        /* Paths */
+        "outDir": "./dist",
+        "typeRoots": ["./node_modules/@types", "./@types"],
+
+        /* Project */
+        "target": "es6",
+        "module": "commonjs",
+
+        /* Imports */
+        "moduleResolution": "node", // Yup, we are using Node
+        "forceConsistentCasingInFileNames": true, // Error out if import and file system have a casing mismatch. Recommended by TS.
+        "esModuleInterop": true, // Improve importing from CommonJS modules, recommended by TS: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-7.html#support-for-import-d-from-cjs-from-commonjs-modules-with---esmoduleinterop
+        "skipLibCheck": true, // Significant perf increase by skipping checking .d.ts files, particularly those in node_modules. Recommended by TS.
+        "resolveJsonModule": true, // Allow importing .json files
+        "importHelpers": true,
+
+        /* Additional */
+        "strict": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    }
+}

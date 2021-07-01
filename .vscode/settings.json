@@ -1,0 +1,9 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "files.eol": "\n",
+    "search.exclude": {
+        "**/package-lock.json": true,
+        "**/yarn-lock.json": true
+    }
+}
